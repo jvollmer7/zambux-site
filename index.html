@@ -4,262 +4,205 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zambux: Short deals. Tall savings.</title>
-<meta name="description" content="Zambux turns local businesses' slow hours into full houses. Half off or better, for a few hours only. Grab it free, show your code, enjoy. Launching in Austin, Texas.">
-<meta name="theme-color" content="#0B2545">
-<meta name="robots" content="noindex">  <!-- TEMPORARY preview address: remove this line when the real site launches -->
+<meta name="description" content="Half off or better from local restaurants and shops in Austin, for just a few hours. Grab one free, show your code, enjoy.">
+<meta name="robots" content="noindex"> <!-- TEMPORARY: remove this line when the app is live and the site should show up in search -->
+<link rel="canonical" href="https://www.zambux.com/">
 <meta property="og:title" content="Zambux: Short deals. Tall savings.">
-<meta property="og:description" content="Half off or better from local businesses, for a few hours only. Launching in Austin, Texas.">
+<meta property="og:description" content="Half off or better from local restaurants and shops in Austin, for just a few hours. Grab one free, show your code, enjoy.">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:url" content="https://www.zambux.com/">
+<meta property="og:image" content="https://www.zambux.com/assets/img/life-hero-friends.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B2545">
+<link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="seal" viewBox="0 0 24 24"><path fill="#16A34A" d="M12 1.5l2.6 1.9 3.2-.1 1 3.1 2.6 1.9-1 3.1 1 3.1-2.6 1.9-1 3.1-3.2-.1L12 22.5l-2.6-1.9-3.2.1-1-3.1-2.6-1.9 1-3.1-1-3.1 2.6-1.9 1-3.1 3.2.1z"/><path fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M8 12.4l2.8 2.8L16.2 9.6"/></symbol>
-</svg>
-
-<header class="top">
-  <div class="wrap">
-    <a href="#top" aria-label="Zambux home"><img src="assets/logo-white-sm.png" alt="Zambux"></a>
-    <nav class="links" aria-label="Main">
-      <a class="hide-sm" href="#idea">The idea</a>
-      <a class="hide-sm" href="#customers">For customers</a>
-      <a class="hide-sm" href="#businesses">For businesses</a>
-      <a class="hide-sm" href="#faq">FAQ</a>
-      <a class="btn btn-orange" href="#get-started">Get early access</a>
+<!-- HERO -->
+<header class="top hero">
+  <div class="w">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="/"><img src="assets/img/brand-logo-white.png" alt="Zambux" width="102" height="46"></a>
+      <a class="l" href="#how">How it works</a><a class="l" href="#live">Live deals</a><a class="l" href="#faq">FAQ</a>
+      <span class="sp"></span>
+      <a class="biz" href="business/">For businesses &rarr;</a>
+      <a class="go" href="get-the-app/">Get the app</a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
     </nav>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="chip" style="align-self:flex-start;background:#FF7A00;color:#0B2545">Live in Austin, Texas</span>
+        <h1>Short deals.<br><em>Tall savings.</em></h1>
+        <p class="lede" style="margin:0">Half off or better from local restaurants and shops, for just a few hours. Grab one free, show your code, enjoy.</p>
+        <div class="actions">
+          <a class="btn pri" href="get-the-app/">Get the app <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B2545" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn ghost" href="#live">See what&rsquo;s live now</a>
+        </div>
+        <div class="proof">
+          <span class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Half off or better, always</span>
+          <span class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Free to grab</span>
+          <span class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Verified businesses</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="stage">
+          <div class="disc"></div>
+          <div class="phone"><img src="assets/img/app-discover.jpg" alt="The Zambux app showing live deals in Austin" width="640" height="1391"></div>
+          <div class="float-card"><img src="assets/img/photo-rainey-street-ramen.jpg" alt="" width="64" height="64"><div><b>50% off any ramen bowl</b><small>Pay $8 &middot; was $16</small></div></div>
+          <div class="float-time" aria-hidden="true">&#9201; 18:37 left</div>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
 <main id="main">
 
-<!-- ================= Hero ================= -->
-<div class="hero" id="top">
-  <div class="wrap">
+<!-- DOUBTS -->
+<section class="doubts pad-s" aria-label="Quick answers">
+  <div class="w"><div class="grid-auto">
+    <div class="doubt"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0B2545" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v8H4v-8M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 110-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 100-5C13 2 12 7 12 7z"/></svg></div><div><div class="disp">Is it really free?</div><p>Grabbing costs nothing. You pay the business the discounted price when you&rsquo;re there.</p></div></div>
+    <div class="doubt"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0B2545" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 5L5 19M7 8a1 1 0 100-.01M17 18a1 1 0 100-.01"/></svg></div><div><div class="disp">Is it real half off?</div><p>Every deal is at least 50% off. We don&rsquo;t allow less.</p></div></div>
+    <div class="doubt"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0B2545" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 109-9M3 4v5h5"/></svg></div><div><div class="disp">What if I can&rsquo;t go?</div><p>Let it go in one tap. Nothing counts against you.</p></div></div>
+    <div class="doubt"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0B2545" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><div><div class="disp">Who&rsquo;s behind the deals?</div><p>Local Austin businesses, checked by hand before they can post.</p></div></div>
+  </div></div>
+</section>
+
+<!-- LIVE -->
+<section id="live" class="bg-paper pad">
+  <div class="w">
+    <div style="margin-bottom:36px"><div class="eyebrow"><span class="live-dot"></span>Live now</div><h2 class="big" style="margin-top:10px">Hungry? Start here.</h2></div>
+    <div class="grid-auto" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:26px">
+      <a class="ticket" href="get-the-app/">
+        <div class="pic"><img class="ph" src="assets/img/photo-smokehouse-brisket.jpg" alt="Sliced smoked brisket with sides" width="900" height="600" loading="lazy"><div class="shade"></div><span class="badge">60% OFF</span><span class="time">&#9201; 46:54</span><div class="who"><img src="assets/img/logo-smokehouse-512.png" alt="" width="40" height="40"><div><b>Smokehouse 512</b><span>0.4 mi away</span></div></div></div>
+        <div class="body"><div class="disp">60% off any brisket plate</div><div class="price"><b>Pay $7.20</b><s>$18</s></div><div class="tfoot"><span class="chip" style="background:#DCFCE7;color:#14532D">You save $10.80</span><span class="btn pri sm">Grab it</span></div></div>
+      </a>
+      <a class="ticket" href="get-the-app/">
+        <div class="pic"><img class="ph" src="assets/img/photo-la-cantina-entree.jpg" alt="Street tacos with rice and beans" width="900" height="600" loading="lazy"><div class="shade"></div><span class="badge">50% OFF</span><span class="time">&#9201; 18:39</span><div class="who"><img src="assets/img/logo-la-cantina.png" alt="" width="40" height="40"><div><b>La Cantina</b><span>1.4 mi away</span></div></div></div>
+        <div class="body"><div class="disp">Buy one entree, get one free</div><div class="price"><b>Pay $12 to $24 for two</b><s>$24 to $48</s></div><div class="tfoot"><span class="chip" style="background:#DCFCE7;color:#14532D">You save $12 to $24</span><span class="btn pri sm">Grab it</span></div></div>
+      </a>
+      <a class="ticket" href="get-the-app/">
+        <div class="pic"><img class="ph" src="assets/img/photo-brunch-club-pancakes.jpg" alt="A stack of pancakes with blueberries" width="900" height="600" loading="lazy"><div class="shade"></div><span class="badge">FREE</span><span class="time">&#9201; 24:57</span><div class="who"><img src="assets/img/logo-brunch-club.png" alt="" width="40" height="40"><div><b>Brunch Club</b><span>1.4 mi away</span></div></div></div>
+        <div class="body"><div class="disp">Free pancake stack</div><div class="price"><b>Worth $10</b></div><div class="tfoot"><span class="chip" style="background:#DCFCE7;color:#14532D">You save $10</span><span class="btn pri sm">Grab it</span></div></div>
+      </a>
+    </div>
+    <p style="margin:20px 0 0;color:var(--slate);font-size:14px">Example deals shown for illustration until real ones are live.</p>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how" class="pad">
+  <div class="w">
+    <div style="text-align:center;margin-bottom:56px"><div class="eyebrow">How it works</div><h2 class="big" style="margin-top:10px">Three taps from hungry to saved.</h2></div>
+    <div class="steps">
+      <div class="step"><div class="phone"><img src="assets/img/app-detail.jpg" alt="A deal page in the Zambux app" width="640" height="1391" loading="lazy"></div><div class="num">1</div><div><div class="disp">Find</div><p>Browse what&rsquo;s live near you, on a list or a map. See exactly how long is left.</p></div></div>
+      <div class="step"><div class="phone"><img src="assets/img/app-code.jpg" alt="The code screen after grabbing a deal" width="640" height="1391" loading="lazy"></div><div class="num">2</div><div><div class="disp">Grab</div><p>Tap to grab it. It&rsquo;s free. Plans change? Let it go and someone else gets your spot.</p></div></div>
+      <div class="step"><div class="phone"><img src="assets/img/app-voucher.jpg" alt="The active coupon screen" width="640" height="1391" loading="lazy"></div><div class="num">3</div><div><div class="disp">Show your code</div><p>The staff scan it when you arrive. Your coupon is good for 4 hours or until closing.</p></div></div>
+    </div>
+    <div style="text-align:center;margin-top:60px"><a class="btn pri" href="get-the-app/">Get the app <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B2545" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<!-- COUNTER -->
+<section class="bg-paper pad">
+  <div class="w"><div class="split">
+    <div><img class="photo" src="assets/img/life-counter-scan.jpg" alt="A smiling cafe worker scanning a customer&rsquo;s phone at the counter" width="762" height="508" loading="lazy"></div>
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div class="eyebrow">At the counter</div>
+      <h2 class="big" style="font-size:clamp(34px,4.4vw,52px)">Show your code.<br>They scan. You save.</h2>
+      <p style="font-size:18px;color:var(--slate);max-width:26em;margin:0">No coupons to print, no codes to type. The staff scan your phone, your coupon starts, and the discount comes off at the register. Good for 4 hours, or until they close.</p>
+      <div style="margin-top:6px"><a class="btn pri" href="get-the-app/">Get the app</a></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- TRUST -->
+<section class="bg-navy trust pad">
+  <div class="w">
+    <h2 class="big" style="color:#fff;max-width:12em">Why you can trust every one.</h2>
+    <div class="grid-auto" style="gap:40px">
+      <div><div class="stat">50%+</div><div class="disp" style="font-size:24px;margin-top:10px">Half off or better</div><p>A deal can&rsquo;t be posted below 50% off. No fake discounts, no inflated &ldquo;regular&rdquo; prices.</p></div>
+      <div><div class="stat">4 hrs</div><div class="disp" style="font-size:24px;margin-top:10px">Short on purpose</div><p>Deals run a few hours at most, so there&rsquo;s something real to act on today.</p></div>
+      <div><div class="stat">100%</div><div class="disp" style="font-size:24px;margin-top:10px">Checked by us</div><p>Every business is verified by hand before its first deal goes live.</p></div>
+      <div><div class="stat">1</div><div class="disp" style="font-size:24px;margin-top:10px">Grab at a time</div><p>So deals go to people who&rsquo;ll actually show up.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MOMENTS -->
+<section class="pad">
+  <div class="w">
+    <div style="margin-bottom:36px"><div class="eyebrow">Eat out more</div><h2 class="big" style="margin-top:10px">Go out more. Pay half.</h2></div>
+    <div class="mosaic">
+      <div class="m" style="flex:7 1 520px;height:400px"><img src="assets/img/life-hero-friends.jpg" alt="Three friends laughing over tacos at an outdoor table" width="765" height="508" loading="lazy"><span class="chip">Friday tacos</span></div>
+      <div class="m" style="flex:5 1 360px;height:400px"><img src="assets/img/life-solo-lunch.jpg" alt="A woman checking her phone over coffee and a croissant" width="502" height="506" loading="lazy"><span class="chip">Lunch break</span></div>
+    </div>
+    <div class="mosaic" style="margin-top:18px">
+      <div class="m" style="flex:1 1 300px;height:360px"><img src="assets/img/life-date-night.jpg" alt="A couple laughing over pizza and dessert" width="510" height="506" loading="lazy"><span class="chip">Date night</span></div>
+      <div class="m" style="flex:1 1 300px;height:360px"><img src="assets/img/life-brunch-group.jpg" alt="Friends sharing pancakes and showing something on a phone" width="500" height="506" loading="lazy"><span class="chip">Sunday brunch</span></div>
+      <div class="m card-navy" style="flex:1 1 300px;height:360px"><div class="disp" style="font-size:38px;line-height:1.02;color:#fff">Real places.<br>Real savings.<br><span style="color:#FF7A00">Right now.</span></div><div><a class="btn pri" href="get-the-app/">Get the app</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CRAVING -->
+<section class="bg-paper pad">
+  <div class="w">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:34px"><h2 class="big">What are you craving?</h2><p style="color:var(--slate);font-size:17px;max-width:22em;margin:0">Food first, in Austin. Salons, fitness and more are coming.</p></div>
+    <div class="tiles">
+      <a class="tile" href="get-the-app/"><img src="assets/img/photo-la-cantina-entree.jpg" alt="Tacos" width="900" height="600" loading="lazy"><div class="sh"></div><span>Tacos</span></a>
+      <a class="tile" href="get-the-app/"><img src="assets/img/photo-smokehouse-brisket.jpg" alt="Brisket" width="900" height="600" loading="lazy"><div class="sh"></div><span>BBQ</span></a>
+      <a class="tile" href="get-the-app/"><img src="assets/img/photo-pie-society-pizza.jpg" alt="Pizza" width="900" height="600" loading="lazy"><div class="sh"></div><span>Pizza</span></a>
+      <a class="tile" href="get-the-app/"><img src="assets/img/photo-brunch-club-pancakes.jpg" alt="Pancakes" width="900" height="600" loading="lazy"><div class="sh"></div><span>Brunch</span></a>
+      <a class="tile" href="get-the-app/"><img src="assets/img/photo-cherrywood-croissant.jpg" alt="Croissant and latte" width="900" height="600" loading="lazy"><div class="sh"></div><span>Coffee</span></a>
+      <a class="tile" href="get-the-app/"><img src="assets/img/photo-rainey-street-ramen.jpg" alt="Ramen" width="900" height="600" loading="lazy"><div class="sh"></div><span>Ramen</span></a>
+      <a class="tile" href="get-the-app/"><img src="assets/img/photo-travis-heights-burger.jpg" alt="Cheeseburger and fries" width="900" height="600" loading="lazy"><div class="sh"></div><span>Burgers</span></a>
+      <a class="tile" href="get-the-app/"><img src="assets/img/photo-sweet-spot-dessert.jpg" alt="Cheesecake" width="900" height="600" loading="lazy"><div class="sh"></div><span>Dessert</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="pad">
+  <div class="w faq-grid">
+    <div><div class="eyebrow">Questions</div><h2 class="big" style="margin-top:10px">Good to know.</h2><p style="color:var(--slate);font-size:17px;margin:16px 0 0;max-width:20em">Still wondering something? Write to <a href="mailto:support@zambux.com" style="color:var(--navy);font-weight:800">support@zambux.com</a>.</p></div>
     <div>
-      <span class="pill pill-orange">Launching in Austin, Texas</span>
-      <h1>Short deals.<br><span>Tall savings.</span></h1>
-      <p class="lede">Half off or better from local businesses, for a few hours only. Grab one free, show your code, enjoy.</p>
-      <div class="cta">
-        <a class="btn btn-orange" href="#customers">Find a deal</a>
-        <a class="btn btn-ghost" href="#businesses">I own a business</a>
-      </div>
-      <ul class="proof">
-        <li>Half off or better, every time</li>
-        <li>Free to grab</li>
-        <li>Verified local businesses</li>
-      </ul>
-    </div>
-
-    <div aria-hidden="true">
-      <div class="phone">
-        <div class="screen">
-          <div class="notch"></div>
-          <h4>Live in Austin</h4>
-          <p class="sub">3 zambux ending soon</p>
-
-          <div class="deal">
-            <div class="biz">
-              <div class="avatar">LC</div>
-              <div><div class="biz-name">La Cantina <svg><use href="#seal"/></svg></div><div class="biz-sub">1.4 mi away</div></div>
-              <span class="timer" data-seconds="1122">18:42</span>
-            </div>
-            <div class="price-row"><span class="badge-off">50% OFF</span><span class="pay">Pay $12 for two</span><span class="was">$24</span></div>
-            <h5>Buy one taco plate, get one free</h5>
-            <p class="fine">Equal or lesser value. One per customer.</p>
-            <div class="foot"><span class="save">You save $12</span><span class="grab">Grab it</span></div>
-          </div>
-
-          <div class="deal">
-            <div class="biz">
-              <div class="avatar">PS</div>
-              <div><div class="biz-name">Pie Society <svg><use href="#seal"/></svg></div><div class="biz-sub">2.1 mi away</div></div>
-              <span class="timer" data-seconds="5698">1:34:58</span>
-            </div>
-            <div class="price-row"><span class="badge-off">54% OFF</span><span class="pay">Pay $11</span><span class="was">$24</span></div>
-            <h5>Large pizza for $11</h5>
-            <div class="foot"><span class="save">You save $13</span><span class="grab">Grab it</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ================= The idea ================= -->
-<section class="idea" id="idea">
-  <div class="wrap">
-    <p class="eyebrow">The idea</p>
-    <h2 class="big">Empty seats pay nothing.</h2>
-    <p class="lead">Every local business has slow hours: an empty table at 2 p.m., an open bay on a Tuesday, an unbooked chair. That time can't be saved and sold later. Hotels have always known this, so they fill rooms at a discount rather than leave them empty. Zambux brings that thinking to every local business, in real time.</p>
-
-    <div class="grid3">
-      <div class="card"><div class="icon">1</div><h3>Posted when it's slow</h3><p>A business posts a deal exactly when it has room, not on a fixed schedule.</p></div>
-      <div class="card"><div class="icon">2</div><h3>Gone in a few hours</h3><p>Every zambux runs for hours, not weeks. Short on purpose, so people come in now.</p></div>
-      <div class="card"><div class="icon">3</div><h3>Half off or better</h3><p>Deals have to be really good, so customers can trust every single one.</p></div>
-    </div>
-
-    <div class="quote">
-      <p>Customers get a deal worth showing up for. Businesses get real people through the door when they need them most.</p>
-      <span>No coupon books, no weeks-long promotions to manage. One quick post and a few hours later the room is fuller.</span>
+      <details class="q" open><summary>How do I use a zambux?</summary><p>Tap Grab it in the app, then get to the business before the deal ends. They scan your code when you arrive, and your coupon starts. If the deal ends first, you get a 10 minute window to be scanned.</p></details>
+      <details class="q"><summary>What if I get there and it&rsquo;s over?</summary><p>A deal is live until its timer runs out. If you grabbed it and it ends before you arrive, you have 10 minutes to be scanned. After that your spot goes back, so aim to arrive before the timer ends.</p></details>
+      <details class="q"><summary>Can I grab more than one?</summary><p>One at a time. Use it, or let it go, then grab another. That keeps deals fair for everyone.</p></details>
+      <details class="q"><summary>Which phones does it work on?</summary><p>iPhone for now. Android is next if enough people ask, so leave your email on the Get the app page and we&rsquo;ll count you in.</p></details>
+      <details class="q"><summary>What does it cost?</summary><p>Nothing. The app is free and grabbing is free. You only pay the business the discounted price when you&rsquo;re there.</p></details>
+      <details class="q"><summary>Love a place that isn&rsquo;t on Zambux?</summary><p>Tell us at <a href="mailto:support@zambux.com" style="font-weight:700;color:var(--navy)">support@zambux.com</a> and we&rsquo;ll invite them.</p></details>
     </div>
   </div>
 </section>
 
-<!-- ================= Customers ================= -->
-<section class="paper" id="customers">
-  <div class="wrap">
-    <p class="eyebrow">For customers</p>
-    <h2 class="big">Really good deals, right now.</h2>
-    <p class="lead">See what's live near you, grab it for free, and show your code when you arrive. No sign-up fees, no catch.</p>
-
-    <div class="steps">
-      <div class="card"><div class="num">1</div><h3>Find</h3><p>Browse live deals on a list or a map. Filter by distance and type, and see exactly how long is left.</p></div>
-      <div class="card"><div class="num">2</div><h3>Grab</h3><p>Tap to grab it. It's free, with no obligation. Plans change? Let it go and someone else gets your spot.</p></div>
-      <div class="card"><div class="num">3</div><h3>Show your code</h3><p>When you arrive, the staff scan your code. Your coupon starts, good for 4 hours or until closing.</p></div>
-    </div>
-
-    <div class="facts">
-      <div class="card"><h3>Half off or better</h3><p>Always. A deal can't be posted below 50% off.</p></div>
-      <div class="card"><h3>Short on purpose</h3><p>Deals run for a few hours at most, so there's something real to act on.</p></div>
-      <div class="card"><h3>Verified businesses</h3><p>Every business is checked by us before it can post a deal.</p></div>
-      <div class="card"><h3>Fair for everyone</h3><p>One grab at a time, so deals go to people who'll actually show up.</p></div>
-    </div>
-
-    <div class="examples" aria-label="Example deals">
-      <div class="deal big">
-        <div class="biz"><div class="avatar">LC</div><div><div class="biz-name">La Cantina <svg><use href="#seal"/></svg></div><div class="biz-sub">1204 S Congress Ave</div></div><span class="timer">18:42</span></div>
-        <div class="price-row"><span class="badge-off">50% OFF</span><span class="pay">Pay $12 for two</span><span class="was">$24</span></div>
-        <h5>Buy one taco plate, get one free</h5>
-        <p class="fine">Equal or lesser value. One per customer.</p>
-        <div class="foot"><span class="save">You save $12</span><span class="grab">Grab it</span></div>
-      </div>
-      <div class="deal big">
-        <div class="biz"><div class="avatar">SV</div><div><div class="biz-name">Studio Verde <svg><use href="#seal"/></svg></div><div class="biz-sub">Hair and color</div></div><span class="timer">2:10:00</span></div>
-        <div class="price-row"><span class="badge-off">60% OFF</span><span class="pay">Pay $48</span><span class="was">$120</span></div>
-        <h5>60% off any cut and color</h5>
-        <p class="fine">Appointment required. New customers only.</p>
-        <div class="foot"><span class="save">You save $72</span><span class="grab">Grab it</span></div>
-      </div>
-      <div class="deal big">
-        <div class="biz"><div class="avatar">BC</div><div><div class="biz-name">Brunch Club <svg><use href="#seal"/></svg></div><div class="biz-sub">1500 S 1st St</div></div><span class="timer">24:59</span></div>
-        <div class="price-row"><span class="badge-off">FREE</span><span class="pay">Worth $10</span></div>
-        <h5>Free pancake stack</h5>
-        <p class="fine">One per customer. Dine-in only.</p>
-        <div class="foot"><span class="save">You save $10</span><span class="grab">Grab it</span></div>
-      </div>
-    </div>
-    <p class="note" style="color:var(--slate);margin-top:16px">Example deals shown for illustration.</p>
-  </div>
-</section>
-
-<!-- ================= Businesses ================= -->
-<section class="navy" id="businesses">
-  <div class="wrap">
-    <p class="eyebrow">For businesses</p>
-    <h2 class="big">Turn slow hours into full houses.</h2>
-    <p class="lead">Post a half-off deal when it's quiet. Real customers walk in within hours. You stay in control of how many, and when.</p>
-
-    <div class="steps">
-      <div class="card" style="background:var(--navy-lift);border-color:transparent;color:#fff"><div class="num">1</div><h3>Post</h3><p style="color:var(--soft)">Pick a deal type, set the price and the time. Add a photo and a limit if you like. It takes about a minute.</p></div>
-      <div class="card" style="background:var(--navy-lift);border-color:transparent;color:#fff"><div class="num">2</div><h3>Fill</h3><p style="color:var(--soft)">Customers nearby grab it, up to the limit you set. Close it to new grabs any time you're busy.</p></div>
-      <div class="card" style="background:var(--navy-lift);border-color:transparent;color:#fff"><div class="num">3</div><h3>Scan</h3><p style="color:var(--soft)">Your staff scan each customer's code on arrival. You see who showed up and how it went.</p></div>
-    </div>
-
-    <div class="features">
-      <div class="card" style="background:var(--navy-lift);border-color:transparent;color:#fff"><h3>Four simple deal types</h3><p style="color:var(--soft)">Percent off, buy one get one free, price drop, or a free item. Each one works out to at least 50% off, so there's nothing to get wrong.</p></div>
-      <div class="card" style="background:var(--navy-lift);border-color:transparent;color:#fff"><h3>You set the limit</h3><p style="color:var(--soft)">Cap how many people can grab a deal so you're never overrun, and stop new grabs the moment you're full.</p></div>
-      <div class="card" style="background:var(--navy-lift);border-color:transparent;color:#fff"><h3>Only while you're open</h3><p style="color:var(--soft)">Deals run only during your business hours and never longer than 4 hours.</p></div>
-      <div class="card" style="background:var(--navy-lift);border-color:transparent;color:#fff"><h3>Your whole team can scan</h3><p style="color:var(--soft)">Invite staff to scan codes with the phone camera. They can't change your deals or settings.</p></div>
-      <div class="card" style="background:var(--navy-lift);border-color:transparent;color:#fff"><h3>Results and coaching</h3><p style="color:var(--soft)">See grabs, redemptions and which deals work best. If fewer people show up than you'd like, you get tips built from your own numbers.</p></div>
-      <div class="card" style="background:var(--navy-lift);border-color:transparent;color:#fff"><h3>Verified before you post</h3><p style="color:var(--soft)">We check every business first, which is part of why customers trust the deals.</p></div>
-    </div>
-
-    <h2 class="big" style="margin-top:84px;max-width:20ch">Start free. Grow when you're ready.</h2>
-    <div class="plans">
-      <div class="plan free">
-        <div><h3>Free</h3><p class="tag">Post your first zambux today.</p></div>
-        <ul><li>2 zambux a month</li><li>1 live at a time</li><li>Customers grab, your staff scan</li><li>Results and coaching</li><li>Photos and fine print</li></ul>
-        <div class="status"><span class="pill pill-green">Available at launch</span></div>
-      </div>
-      <div class="plan">
-        <div><h3>Starter</h3><p class="tag">For businesses that run deals often.</p></div>
-        <ul><li>Everything in Free</li><li>Up to 10 zambux a month</li><li>Up to 2 live at a time</li></ul>
-        <div class="status"><span class="pill" style="background:var(--line);color:var(--navy)">Coming soon</span></div>
-      </div>
-      <div class="plan">
-        <div><h3>Pro</h3><p class="tag">For the busiest businesses.</p></div>
-        <ul><li>Everything in Starter</li><li>Unlimited zambux a month</li><li>Up to 2 live at a time</li><li>Schedule deals ahead of time</li></ul>
-        <div class="status"><span class="pill" style="background:var(--line);color:var(--navy)">Coming soon</span></div>
-      </div>
-    </div>
-    <p class="note">Paid plans aren't available yet. Pricing will be announced before they launch.</p>
-  </div>
-</section>
-
-<!-- ================= FAQ ================= -->
-<section id="faq">
-  <div class="wrap">
-    <p class="eyebrow">Questions</p>
-    <h2 class="big">Good to know.</h2>
-    <div class="faq">
-      <details><summary>Does it cost customers anything?</summary><p>No. Grabbing a zambux is free and creates no obligation. You only pay the discounted price at the business, if you decide to use it.</p></details>
-      <details><summary>What does "grab" mean?</summary><p>It's how you save a deal for yourself. You get a code. When you arrive, the business scans it and your coupon starts. If you can't make it, you can let it go so someone else gets the spot.</p></details>
-      <details><summary>How long do deals last?</summary><p>A few hours at most, and only while the business is open. Once the staff scan your code, your coupon is good for 4 hours or until closing, whichever comes first. If a deal ends before you get there, you still get a 10 minute window to be scanned.</p></details>
-      <details><summary>Why can't I grab more than one at a time?</summary><p>It keeps deals fair. Holding one at a time means spots go to people who will actually show up. You can switch to a different one whenever you like, and once you've been scanned you're free to grab another.</p></details>
-      <details><summary>Are the deals really half off?</summary><p>Yes. The app won't let a business post anything below 50% off. Percent-off deals are 50, 60, 70 or 80 percent, and buy one get one free works out to exactly half. If a deal isn't as advertised, customers can report it.</p></details>
-      <details><summary>What kinds of businesses can post?</summary><p>Any local business with slow hours: restaurants and cafes first, then salons, spas, fitness, home services and more. Zambux deals don't include alcohol.</p></details>
-      <details><summary>How does a business get verified?</summary><p>We check each business before it can post: that it's real, local and who it says it is. It's a quick process and part of what keeps deals trustworthy.</p></details>
-      <details><summary>What does it cost a business?</summary><p>You can start on the Free plan at no cost and post up to 2 zambux a month. Paid plans with more room will come later.</p></details>
-      <details><summary>Where is Zambux available?</summary><p>We're launching in Austin, Texas, and growing from there.</p></details>
-    </div>
-  </div>
-</section>
-
-<!-- ================= Sign up ================= -->
-<section class="navy signup" id="get-started">
-  <div class="wrap">
-    <p class="eyebrow">Be first in Austin</p>
-    <h2>Short deals. Tall savings.</h2>
-    <p class="lead">The app is almost ready. Tell us you're interested and we'll let you know the moment it's live.</p>
-    <div class="cta">
-      <a class="btn btn-orange" href="mailto:support@zambux.com?subject=Notify%20me%20when%20Zambux%20launches&body=I%27m%20a%20customer%20and%20would%20like%20to%20know%20when%20Zambux%20is%20live.">Notify me as a customer</a>
-      <a class="btn btn-ghost" href="mailto:support@zambux.com?subject=Zambux%20for%20my%20business&body=My%20business%20name%3A%0AMy%20address%3A%0AMy%20phone%3A%0A">I'm a business</a>
-    </div>
+<!-- FINAL -->
+<section class="final">
+  <div class="w final-in">
+    <div><h2>Your next deal is a few taps away.</h2><div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:14px;align-items:center"><a class="btn navy" href="get-the-app/">Get the app</a><span style="font-weight:700;color:var(--navy);font-size:15px">iPhone now. Android: tell me when.</span></div></div>
+    <div class="qr"><img src="assets/img/qr.png" alt="QR code that opens the Get the app page" width="176" height="176"><b>Scan with your phone</b></div>
   </div>
 </section>
 
 </main>
 
-<footer>
-  <div class="wrap">
-    <div>
-      <img src="assets/logo-white-sm.png" alt="Zambux">
-      <p>Short deals. Tall savings.<br>Turn slow hours into full houses.</p>
-    </div>
-    <div>
-      <h6>Explore</h6>
-      <a href="#idea">The idea</a>
-      <a href="#customers">For customers</a>
-      <a href="#businesses">For businesses</a>
-      <a href="#faq">FAQ</a>
-    </div>
-    <div>
-      <h6>Zambux</h6>
-      <a href="mailto:support@zambux.com">Contact</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-    <p class="fine">&copy; 2026 Zambux. Launching in Austin, Texas.</p>
+<footer class="foot">
+  <div class="w foot-in">
+    <a href="/"><img src="assets/img/brand-logo-white.png" alt="Zambux" width="89" height="40"></a>
+    <a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="mailto:support@zambux.com">Contact</a>
+    <span class="sp"></span>
+    <a class="biz" href="business/">Own a business? Fill your slow hours &rarr;</a>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<div class="bar"><a class="btn pri" href="get-the-app/">Get the app</a></div>
+<script src="site.js"></script>
 </body>
 </html>
