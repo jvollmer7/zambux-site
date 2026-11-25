@@ -31,6 +31,26 @@
     }, { threshold: 0, rootMargin: '-120px 0px 0px 0px' }).observe(hero);
   }
 
+  // ---- plans chart: click or tap a plan to highlight its column (and card, and summary) ----
+  var plans = document.querySelector('table.cmp');
+  if (plans) {
+    var targets = [];
+    Array.prototype.forEach.call(plans.querySelectorAll('tr'), function (tr) {
+      var cells = Array.prototype.filter.call(tr.children, function (c) { return c.tagName === 'TD' || (c.tagName === 'TH' && c.getAttribute('scope') === 'col'); });
+      // the first header cell is the empty corner; plan columns are the last three cells of every row
+      cells = cells.slice(-3);
+      cells.forEach(function (c, i) { c.setAttribute('data-c', i + 1); });
+    });
+    targets = document.querySelectorAll('[data-c]');
+    var pick = function (n) {
+      Array.prototype.forEach.call(targets, function (el) { el.classList.toggle('on', el.getAttribute('data-c') === String(n)); });
+    };
+    Array.prototype.forEach.call(targets, function (el) {
+      el.addEventListener('click', function (e) { if (e.target.closest('a')) return; pick(el.getAttribute('data-c')); });
+    });
+    pick(3); // Pro starts highlighted
+  }
+
   // ---- which phone is this? Used on the download page to show the right way to get the app ----
   var ua = navigator.userAgent, device = /android/i.test(ua) ? 'android' : (/iPhone|iPad|iPod/i.test(ua) ? 'ios' : 'desktop');
   document.body.setAttribute('data-device', device);

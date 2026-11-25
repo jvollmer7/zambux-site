@@ -33,6 +33,68 @@
 .plan .disp{font-size:28px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .plan p{color:var(--slate);margin:0;flex:1}
 .hero .lede.dark{color:var(--soft)}
+.cmp-wrap{overflow-x:auto;margin:0 -20px;padding:0 20px 8px}
+table.cmp{width:100%;min-width:720px;border-collapse:separate;border-spacing:0;table-layout:fixed}
+table.cmp th,table.cmp td{padding:16px 18px;text-align:center;border-bottom:1px solid var(--line);font-size:16px;vertical-align:middle}
+table.cmp th[scope=row]{text-align:left;font-weight:600;color:var(--ink);width:34%;position:sticky;left:0;background:#fff;z-index:1}
+table.cmp td{color:var(--navy);font-weight:700}
+table.cmp td small{display:block;font-weight:600;font-size:13px;color:var(--slate);margin-top:2px}
+table.cmp tr.grp th{background:var(--paper);text-align:left;font:800 12px Inter;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-ink);padding:12px 18px;border-bottom:1px solid var(--line)}
+table.cmp thead th{vertical-align:bottom;border-bottom:0;padding:0 10px 18px}
+table.cmp thead th:first-child{position:sticky;left:0;background:#fff;z-index:2}
+.ph-card{border:1px solid var(--line);border-radius:22px 22px 0 0;padding:22px 14px 20px;display:flex;flex-direction:column;align-items:center;gap:6px;background:#fff;height:100%}
+.ph-card .cta{min-height:46px;display:flex;align-items:center;margin-top:4px}
+.ph-card .nm{font:700 26px 'Space Grotesk';color:var(--navy);letter-spacing:-.03em}
+.ph-card .px{font:700 40px 'Space Grotesk';color:var(--navy);letter-spacing:-.04em;line-height:1}
+.ph-card .px small{font:600 15px Inter;color:var(--slate);letter-spacing:0}
+.ph-card .for{font-size:14px;color:var(--slate);min-height:42px;max-width:14em}
+table.cmp th[scope=row] small{display:block;font-weight:500;font-size:13px;color:var(--slate);margin-top:2px}
+table.cmp tr.grp th{position:static}
+table.cmp tr.grp td{background:var(--paper);padding:0}
+.cmp [data-c]{cursor:pointer;-webkit-tap-highlight-color:transparent}
+table.cmp td,table.cmp thead th{transition:background .18s,box-shadow .18s}
+table.cmp tbody tr:not(.grp):hover th[scope=row]{color:var(--navy)}
+table.cmp td:hover{background:#F6F9FD}
+table.cmp td.on{background:#EAF1FB;box-shadow:inset 2px 0 0 var(--navy),inset -2px 0 0 var(--navy)}
+table.cmp tr.grp td.on{background:#DCE8F8}
+table.cmp tbody tr:last-child td.on{box-shadow:inset 2px 0 0 var(--navy),inset -2px 0 0 var(--navy),inset 0 -2px 0 var(--navy);border-radius:0 0 14px 14px}
+table.cmp td.on .yes{background:#fff}
+.ph-card{transition:transform .2s,background .2s,border-color .2s,box-shadow .2s;cursor:pointer}
+thead th:hover .ph-card{border-color:var(--navy)}
+thead th.on .ph-card{background:var(--navy);border-color:var(--navy);transform:translateY(-8px);box-shadow:0 16px 30px rgba(11,37,69,.25)}
+thead th.on .nm,thead th.on .px{color:#fff}
+thead th.on .px small,thead th.on .for{color:var(--soft)}
+thead th.on .ph-card .tag{background:var(--orange)!important;color:var(--navy)!important}
+.hint{margin:0 0 14px;color:var(--slate);font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px}
+.hint::before{content:"";width:8px;height:8px;border-radius:99px;background:var(--orange)}
+.fit div{cursor:pointer;border-left-color:var(--line);padding:10px 16px;border-radius:0 14px 14px 0;transition:background .18s,border-color .18s}
+.fit div.on{background:var(--tint);border-left-color:var(--orange)}
+.pc{cursor:pointer;transition:border-color .18s,box-shadow .18s,background .18s}
+.pc.on{background:var(--navy);border-color:var(--navy);box-shadow:0 14px 30px rgba(11,37,69,.25)}
+.pc.on .nm,.pc.on .px{color:#fff}.pc.on .px small,.pc.on .for{color:var(--soft)}
+.pc.on ul{border-color:rgba(255,255,255,.22)}.pc.on li{color:#fff}.pc.on li svg{stroke:#4ADE80}
+.pc.on .tag{background:var(--orange)!important;color:var(--navy)!important}
+.yes{display:inline-flex;width:26px;height:26px;border-radius:99px;background:var(--green-tint);align-items:center;justify-content:center}
+.no{color:#9AA5B5;font-weight:600}
+.best{display:inline-block;background:var(--orange);color:var(--navy);font:800 11px Inter;letter-spacing:.08em;text-transform:uppercase;padding:4px 11px;border-radius:99px;margin-bottom:4px}
+.fit{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:36px}
+.fit div{border-left:4px solid var(--orange);padding:4px 0 4px 16px}
+.fit b{display:block;font:700 20px 'Space Grotesk';color:var(--navy);letter-spacing:-.02em}
+.fit span{color:var(--slate);font-size:16px}
+
+.plan-cards{display:none;gap:18px}
+.pc{border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:6px;background:#fff}
+.pc .nm{font:700 26px 'Space Grotesk';color:var(--navy);letter-spacing:-.03em}
+.pc .px{font:700 40px 'Space Grotesk';color:var(--navy);letter-spacing:-.04em;line-height:1}
+.pc .px small{font:600 15px Inter;color:var(--slate);letter-spacing:0}
+.pc .for{color:var(--slate);font-size:15px}
+.pc .cta{margin:8px 0 6px;min-height:36px;display:flex;align-items:center}
+.pc ul{list-style:none;margin:0;padding:12px 0 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.pc li{display:flex;gap:10px;align-items:flex-start;font-weight:600;color:var(--ink)}
+.pc li svg{flex:none;margin-top:3px}
+.pc .best{align-self:flex-start}
+@media (max-width:860px){.cmp-wrap{display:none}.plan-cards{display:flex;flex-direction:column}}
+
 </style>
 </head>
 <body>
@@ -118,13 +180,42 @@
 
 <section id="plans" class="pad">
   <div class="w">
-    <h2 class="big" style="max-width:14em;margin-bottom:40px">Start free. Grow when you&rsquo;re ready.</h2>
-    <div class="b-grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
-      <div class="plan on"><div class="disp">Free</div><p>2 zambux a month. 1 live at a time. Results and coaching.</p><a class="btn pri sm" href="/get-the-app/" style="align-self:flex-start">Start free</a></div>
-      <div class="plan"><div class="disp">Starter <span class="tag" style="background:var(--tint);color:var(--navy)">Coming soon</span></div><p>10 zambux a month. 2 live at a time.</p></div>
-      <div class="plan"><div class="disp">Pro <span class="tag" style="background:var(--tint);color:var(--navy)">Coming soon</span></div><p>Unlimited zambux. Scheduling. Listed first in Discover.</p></div>
+    <div style="max-width:34em;margin-bottom:40px"><div class="eyebrow">Plans</div><h2 class="big" style="margin-top:10px">Start free. Grow when you&rsquo;re ready.</h2><p style="color:var(--slate);font-size:18px;margin:14px 0 0">Every plan has the same promise to customers: half off or better, a few hours at most. The plans only change how much you can post, and how easily you&rsquo;re found.</p></div>
+    <p class="hint" aria-hidden="true">Tap a plan to compare</p>
+    <div class="cmp-wrap">
+    <table class="cmp">
+      <caption class="sr" style="position:absolute;left:-9999px">Compare Zambux plans</caption>
+      <colgroup><col style="width:34%"><col style="width:22%"><col style="width:22%"><col style="width:22%"></colgroup>
+      <thead><tr>
+        <th scope="col"><span class="sr" style="position:absolute;left:-9999px">Feature</span></th>
+        <th scope="col"><div class="ph-card"><span class="best" style="visibility:hidden" aria-hidden="true">.</span><div class="nm">Free</div><div class="px">$0</div><div class="for">Start here. Post your first zambux today.</div><div class="cta"><a class="btn pri sm" href="/get-the-app/">Start free</a></div></div></th>
+        <th scope="col"><div class="ph-card"><span class="best" style="visibility:hidden" aria-hidden="true">.</span><div class="nm">Starter</div><div class="px">$49<small> / month</small></div><div class="for">For businesses that run deals often.</div><div class="cta"><span class="tag" style="background:var(--tint);color:var(--navy)">Coming soon</span></div></div></th>
+        <th scope="col"><div class="ph-card"><span class="best">Best for busy places</span><div class="nm">Pro</div><div class="px">$99<small> / month</small></div><div class="for">For busy businesses that want to stand out.</div><div class="cta"><span class="tag" style="background:var(--orange);color:var(--navy)">Coming soon</span></div></div></th>
+      </tr></thead>
+      <tbody>
+<tr class="grp"><th scope="rowgroup">Posting</th><td></td><td></td><td></td></tr>
+<tr><th scope="row">Zambux per month<small>How many deals you can post</small></th><td>2</td><td>10</td><td>Unlimited</td></tr>
+<tr><th scope="row">Live at the same time<small>Deals running at once</small></th><td>1</td><td>2</td><td>2</td></tr>
+<tr><th scope="row">Schedule ahead of time<small>Set up deals days early</small></th><td><span class="no" aria-label="Not included">&mdash;</span></td><td><span class="no" aria-label="Not included">&mdash;</span></td><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td></tr>
+<tr class="grp"><th scope="rowgroup">Getting found</th><td></td><td></td><td></td></tr>
+<tr><th scope="row">Customers grab, your staff scan<small>No coupons, no paper</small></th><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td></tr>
+<tr><th scope="row">Photos and fine print<small>Make every deal look good</small></th><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td></tr>
+<tr><th scope="row">Listed first in Discover</th><td><span class="no" aria-label="Not included">&mdash;</span></td><td><span class="no" aria-label="Not included">&mdash;</span></td><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td></tr>
+<tr class="grp"><th scope="rowgroup">Know what works</th><td></td><td></td><td></td></tr>
+<tr><th scope="row">Results: grabs, show-ups, busiest times<small>See what works</small></th><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td></tr>
+<tr><th scope="row">Tips to get more people to show up<small>Built from your own numbers</small></th><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td></tr>
+<tr class="grp"><th scope="rowgroup">Your team</th><td></td><td></td><td></td></tr>
+<tr><th scope="row">Staff accounts for scanning<small>Your team scans, you stay in charge</small></th><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td><td><span class="yes" aria-label="Included"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span></td></tr>
+      </tbody>
+    </table>
     </div>
-    <p style="margin:20px 0 0;color:var(--slate);font-size:14px">Paid plans aren&rsquo;t on sale yet. Prices will appear here when they are.</p>
+    <div class="plan-cards"><div class="pc" data-c="1"><div class="nm">Free</div><div class="px">$0</div><div class="for">Start here. Post your first zambux today.</div><div class="cta"><a class="btn pri sm" href="/get-the-app/">Start free</a></div><ul><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>2 zambux a month</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>1 live at a time</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Customers grab, your staff scan</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Photos and fine print</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Results: grabs, show-ups, busiest times</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Tips to get more people to show up</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Staff accounts for scanning</span></li></ul></div><div class="pc" data-c="2"><div class="nm">Starter</div><div class="px">$49<small> / month</small></div><div class="for">For businesses that run deals often.</div><div class="cta"><span class="tag" style="background:var(--tint);color:var(--navy)">Coming soon</span></div><ul><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Everything in Free</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>10 zambux a month</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>2 live at the same time</span></li></ul></div><div class="pc" data-c="3"><span class="best">Best for busy places</span><div class="nm">Pro</div><div class="px">$99<small> / month</small></div><div class="for">For busy businesses that want to stand out.</div><div class="cta"><span class="tag" style="background:var(--orange);color:var(--navy)">Coming soon</span></div><ul><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Everything in Starter</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Unlimited zambux a month</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>2 live at the same time</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Schedule ahead of time</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Listed first in Discover</span></li></ul></div></div>
+    <div class="fit">
+      <div data-c="1"><b>Free</b><span>Try it with no risk. Two zambux a month is enough to see who shows up.</span></div>
+      <div data-c="2"><b>Starter</b><span>When a few deals a week work for you. Two can run at once, so lunch and happy hour don&rsquo;t compete.</span></div>
+      <div data-c="3"><b>Pro</b><span>Post as often as you like, plan the week ahead, and show up first when customers browse.</span></div>
+    </div>
+    <p style="margin:26px 0 0;color:var(--slate);font-size:14px">Starter and Pro aren&rsquo;t on sale yet. Start free in the app now; when paid plans open, you can upgrade there. Prices are per month.</p>
   </div>
 </section>
 
