@@ -25,6 +25,7 @@ img{max-width:100%}
 .live-dot{display:inline-block;width:10px;height:10px;border-radius:99px;background:#16A34A;margin-right:8px}
 .ico{width:48px;height:48px;border-radius:14px;background:var(--tint);display:flex;align-items:center;justify-content:center;flex:none}
 .check{display:flex;align-items:center;gap:8px}
+.check svg{flex:none}
 
 /* header */
 .top{background:var(--navy);position:relative;z-index:20}
