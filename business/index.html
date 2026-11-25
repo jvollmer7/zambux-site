@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zambux for business: turn slow hours into full houses</title>
-<meta name="description" content="Post a half-off deal when it's quiet so people can find you. You choose how many, and when. Free to start in Austin.">
+<meta name="description" content="Post a half-off deal when it's quiet so people can find you. You choose how many, and when. Free to start in Austin, and we never take a cut of your sales.">
 <meta name="robots" content="noindex"> <!-- TEMPORARY: remove at launch -->
 <link rel="canonical" href="https://www.zambux.com/business/">
 <meta property="og:title" content="Zambux for business: turn slow hours into full houses">
-<meta property="og:description" content="Post a half-off deal when it's quiet. Staff scan a code at the door. Free to start in Austin.">
+<meta property="og:description" content="Post a half-off deal when it's quiet. Staff scan a code at the door. Free to start, and no cut of your sales.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.zambux.com/assets/img/life-counter-scan.jpg">
 <meta name="theme-color" content="#0B2545">
@@ -33,6 +33,14 @@
 .plan .disp{font-size:28px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .plan p{color:var(--slate);margin:0;flex:1}
 .hero .lede.dark{color:var(--soft)}
+.pf-grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.pf{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.pf .big-n{font:700 56px 'Space Grotesk';color:var(--navy);letter-spacing:-.04em;line-height:1}
+.pf .big-n em{font-style:normal;color:var(--orange)}
+.pf p{margin:0;color:var(--ink);font-size:17px;font-weight:600;line-height:1.35}
+.pf small{margin-top:auto;color:var(--slate);font-size:13px}
+.pf small a{color:var(--navy);font-weight:700;text-decoration:underline;text-underline-offset:2px}
+
 .cmp-wrap{overflow-x:auto;margin:0 -20px;padding:0 20px 8px}
 table.cmp{width:100%;min-width:720px;border-collapse:separate;border-spacing:0;table-layout:fixed}
 table.cmp th,table.cmp td{padding:16px 18px;text-align:center;border-bottom:1px solid var(--line);font-size:16px;vertical-align:middle}
@@ -112,7 +120,7 @@ thead th.on .ph-card .tag{background:var(--orange)!important;color:var(--navy)!i
     </nav>
     <div class="hero-grid" id="main">
       <div class="hero-copy">
-        <span class="chip" style="align-self:flex-start;background:#FF7A00;color:#0B2545">Free to start &middot; Austin, TX</span>
+        <span class="chip" style="align-self:flex-start;background:#FF7A00;color:#0B2545">Free to start &middot; No cut of your sales</span>
         <h1 style="font-size:clamp(44px,6.4vw,84px)">Turn slow hours<br>into <em>full houses.</em></h1>
         <p class="lede" style="margin:0">Post a half-off deal when it&rsquo;s quiet, so people can find you. You choose how many, and when. Staff scan a code at the door.</p>
         <div class="actions"><a class="btn pri" href="/get-the-app/">Start free</a><a class="btn ghost" href="#how">See how it works</a></div>
@@ -140,6 +148,19 @@ thead th.on .ph-card .tag{background:var(--orange)!important;color:var(--navy)!i
     </div>
     <div><img class="photo" src="/assets/img/life-counter-scan.jpg" alt="A cafe worker scanning a customer's phone at the counter" width="762" height="508" loading="lazy"></div>
   </div></div>
+</section>
+
+<section id="proof" class="bg-paper pad">
+  <div class="w">
+    <div style="max-width:36em;margin-bottom:40px"><div class="eyebrow">What the research says</div><h2 class="big" style="margin-top:10px">Deals bring people through the door.</h2><p style="color:var(--slate);font-size:18px;margin:14px 0 0">Surveys of diners and businesses keep finding the same thing: a good deal gets new people to try a place, and gets regulars to come more often.</p></div>
+    <div class="pf-grid">
+      <div class="pf"><div class="big-n">67<em>%</em></div><p>of consumers say they&rsquo;re more likely to try a restaurant for the first time if it offers a coupon.</p><small>Valassis consumer research, <a href="https://talkbusiness.net/2019/11/coupon-usage-drives-traffic-higher-restaurant-sales/" target="_blank" rel="noopener">reported by Talk Business, 2019</a></small></div>
+      <div class="pf"><div class="big-n">~80<em>%</em></div><p>of customers who used a daily deal were new to the business, in a survey of 324 businesses.</p><small>Rice University, <a href="https://fortune.com/2011/06/16/study-offers-grim-news-on-deal-sites-like-groupon/" target="_blank" rel="noopener">reported by Fortune, 2011</a></small></div>
+      <div class="pf"><div class="big-n">7<em> vs 4.8</em></div><p>restaurant visits a month for coupon users, compared with people who don&rsquo;t use coupons.</p><small>Valassis consumer research, <a href="https://talkbusiness.net/2019/11/coupon-usage-drives-traffic-higher-restaurant-sales/" target="_blank" rel="noopener">reported by Talk Business, 2019</a></small></div>
+      <div class="pf"><div class="big-n">49<em>%</em></div><p>of fast food customers with a deal say they&rsquo;ll spend more, by upgrading items or ordering more.</p><small>Vericast Restaurant TrendWatch, <a href="https://potatogrower.com/2024/05/restaurant-trend-report-finds-consumers" target="_blank" rel="noopener">reported by Potato Grower, 2024</a></small></div>
+    </div>
+    <p style="margin:26px 0 0;color:var(--slate);font-size:15px;max-width:44em">These are survey results about what people say they do, and your results will vary. That&rsquo;s why Zambux shows you your own numbers: how many people grabbed, how many showed up, and your busiest times.</p>
+  </div>
 </section>
 
 <section id="how" class="bg-paper pad">
@@ -180,7 +201,8 @@ thead th.on .ph-card .tag{background:var(--orange)!important;color:var(--navy)!i
 
 <section id="plans" class="pad">
   <div class="w">
-    <div style="max-width:34em;margin-bottom:40px"><div class="eyebrow">Plans</div><h2 class="big" style="margin-top:10px">Start free. Grow when you&rsquo;re ready.</h2><p style="color:var(--slate);font-size:18px;margin:14px 0 0">Every plan has the same promise to customers: half off or better, a few hours at most. The plans only change how much you can post, and how easily you&rsquo;re found.</p></div>
+    <div style="max-width:34em;margin-bottom:40px"><div class="eyebrow">Plans</div><h2 class="big" style="margin-top:10px">Start free. Grow when you&rsquo;re ready.</h2><p style="color:var(--slate);font-size:18px;margin:14px 0 0">Every plan has the same promise to customers: half off or better, a few hours at most. The plans only change how much you can post, and how easily you&rsquo;re found.</p>
+      <p style="color:var(--navy);font-size:20px;font-weight:700;margin:18px 0 0;font-family:'Space Grotesk',Inter,sans-serif;letter-spacing:-.02em">Flat monthly fee. We never take a cut of your sales.</p></div>
     <p class="hint" aria-hidden="true">Tap a plan to compare</p>
     <div class="cmp-wrap">
     <table class="cmp">
@@ -224,7 +246,7 @@ thead th.on .ph-card .tag{background:var(--orange)!important;color:var(--navy)!i
     <div><div class="eyebrow">Questions</div><h2 class="big" style="margin-top:10px">From owners.</h2><p style="color:var(--slate);font-size:17px;margin:16px 0 0;max-width:20em">Something else? <a href="mailto:support@zambux.com" style="color:var(--navy);font-weight:800">support@zambux.com</a></p></div>
     <div>
       <details class="q" open><summary>How long does verification take?</summary><p>We check each business by hand, and we aim to finish within 48 hours of you sending your details.</p></details>
-      <details class="q"><summary>What does a grab cost me?</summary><p>Nothing to list or to be grabbed. You give the discount you chose, only to customers who show up and scan.</p></details>
+      <details class="q"><summary>Does Zambux take a cut of my sales?</summary><p>No. Customers grab for free and pay you directly at your counter, at the price you set. We never take a share of your sales and charge no fee per redemption. Your only cost is your monthly plan, and the Free plan costs nothing.</p></details>
       <details class="q"><summary>What if too many people come?</summary><p>You set a limit on every deal, and you can stop new grabs any time. Deals also end by themselves, within 4 hours.</p></details>
       <details class="q"><summary>How do my staff scan?</summary><p>Staff sign in to the app, open the scanner, and scan each customer&rsquo;s code. Staff can scan but can&rsquo;t change your deals or settings.</p></details>
       <details class="q"><summary>Can I end a zambux early?</summary><p>Yes. Stop new grabs, or close the deal, from the app any time.</p></details>
